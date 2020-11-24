@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.DashboardFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dashboard "
+        android:textSize="20sp"
+        android:padding="15dp"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/text"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        >
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/progressLayout"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="#fff">
+
+        <ProgressBar
+            android:id="@+id/progress_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+        </ProgressBar>
+
+    </RelativeLayout>
+
+
+<!--    <Button-->
+<!--        android:id="@+id/btncheckinternet"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:background="@color/colorPrimary"-->
+<!--        android:text="Check Internet"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textSize="18sp"-->
+
+
+<!--        />-->
+
+
+
+</RelativeLayout>
